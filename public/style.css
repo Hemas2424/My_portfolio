@@ -1,0 +1,16 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    background: transparent;
+}
+
+body {
+    background-image: url('bg.png'); /* Path to your image file */
+    background-size: cover; /* Cover the entire body with the background image */
+    background-repeat: no-repeat; /* Prevent repeating of the background image */
+    color: black; /* Text color */
+    overflow: hidden;
+    overflow-y: scroll;
+  }

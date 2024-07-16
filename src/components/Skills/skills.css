@@ -1,0 +1,40 @@
+#skills{
+    overflow: hidden;
+    width: 100vw;
+    max-width: 60rem;
+    display: flex;
+    flex-direction: column;
+    padding-top: 6rem;
+    padding-bottom: 4rem;
+    justify-content: center;
+    text-align: justify;
+    margin: 0 auto;
+    
+}
+
+.skillTitle{
+
+    font-size: 3rem;
+    font-weight: 600;
+    margin-bottom: 1rem;
+    text-decoration: underline;
+    text-decoration-color: rgb(255, 255, 255);
+    text-decoration-thickness: 3px;
+    text-underline-offset: 10px;
+    padding: 0 2rem;
+    padding-bottom: 20px;
+    color: white;
+}
+
+.skillsdesc{
+    
+    font-size:large;
+    font-weight: 100;
+    font-family: 'Raleway', sans-serif;
+    line-height: 30px;
+    padding: 0 2rem;
+    color: white;
+    
+}
+
+
