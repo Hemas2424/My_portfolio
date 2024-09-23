@@ -1,0 +1,89 @@
+#learning {
+    overflow: hidden;
+    width: 100vw;
+    max-width: 60rem;
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 7rem;
+    justify-content: center;
+    text-align: justify;
+    margin: 0 auto;
+  }
+  
+  .learnTitle {
+    font-size: 3rem;
+    font-weight: 600;
+    margin-bottom: 1rem;
+    text-decoration: underline;
+    text-decoration-color: rgb(255, 255, 255);
+    text-decoration-thickness: 3px;
+    text-underline-offset: 10px;
+    padding: 0 2rem;
+    padding-bottom: 50px;
+    color: white;
+  }
+  
+  .learnGrid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1rem 2rem; /* Adjusted gap: smaller gap between columns, larger gap between rows */
+    justify-content: center;
+    max-width: 65rem;
+    margin: 0 auto; /* Center align the grid */
+  }
+  
+  .learnImgWrapper {
+    width: 100%;
+    height: 15rem;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column; /* Ensures text appears below image */
+    justify-content: flex-start; /* Align text at the top */
+    align-items: center;
+    text-align: center;
+    font-size: larger;
+    line-height: 200%;
+    color: white;
+  }
+  
+  .learnImg {
+    width: 60%;
+    height: 60%;
+    object-fit: cover;
+    transition: transform 0.3s ease;
+    box-shadow: 0 0 20px rgb(67, 75, 94); /* Example shadow */
+    border-radius: 20px;
+  }
+  
+  .learnImg:hover {
+    cursor: pointer;
+    transform: scale(1.05); /* Example: Increase size on hover */
+  }
+  
+  .learnImgText {
+    margin-top: 0.5rem; /* Adjust spacing between image and text */
+    font-size: 1.2rem; /* Adjust text size */
+    color: rgb(255, 255, 255); /* Text color */
+   
+  }
+  
+  @media (max-width: 768px) {
+    .learnGrid {
+      grid-template-columns: repeat(2, 1fr); /* Two columns for tablets */
+    }
+  }
+  
+  /* Media query for phones and smaller screens */
+  @media (max-width: 480px) {
+    .learnGrid {
+      grid-template-columns: repeat(1, 1fr); /* Single column for phones */
+    }
+  
+    .learnTitle {
+      font-size: 2rem; /* Decrease font size for smaller screens */
+    }
+  
+    .learnImgText {
+      font-size: 0.8rem; /* Further decrease text size for smaller screens */
+    }
+  }

@@ -1,0 +1,107 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@100&display=swap');
+
+/* General styles for #intro */
+#intro {
+    height: calc(100vh - 4rem);
+    width: 100vw;
+    max-width: 60rem;
+    margin: 0 auto;
+    overflow: hidden;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    scroll-margin-top: 4rem; /* Ensure content is scrolled below the navigation bar */
+}
+
+/* Styles for .introContent */
+.introContent {
+    flex: 1;
+    max-width: 50%;
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    z-index: 1;
+    font-size: 3rem;
+}
+
+/* Styles for .bg (the image) */
+.bg {
+    flex: 1;
+    max-width: 45%;
+    
+    object-fit: cover;
+    position: relative;
+    z-index: 0;
+    height: 90%;
+    margin-left: 20px;
+    border-radius: 20px;
+}
+
+/* Styles for .introText */
+.introText {
+    font-size: 5rem;
+    font-family: 'Railway', sans-serif;
+    color: white;
+}
+
+/* Styles for .introPara */
+.introPara {
+    font-size: medium;
+    font-weight: 100;
+    font-family: 'Raleway', sans-serif;
+    text-align: justify;
+    line-height: 25px;
+    color: white;
+}
+
+/* Styles for .btn */
+.button {
+    background: linear-gradient(90deg, rgba(0,212,255,1) 0%, rgba(9,127,142,1) 100%);
+    margin: 1rem 0;
+    align-self: center;
+    padding: 0.75rem 2rem;
+    border: none;
+    border-radius: 10px;
+    max-width: 200px;
+    font-size: large;
+    color: #d8e0f2; /* Darker shade of blue for better visibility */
+}
+
+.button a {
+    color: #ffffff; /* Set anchor text color to white */
+    text-decoration: none; /* Remove underline from anchor */
+}
+
+
+/* Media query for screens up to 840px wide (tablet and smaller) */
+@media screen and (max-width: 840px) {
+    #intro {
+        flex-direction: column; /* Stack content vertically */
+        align-items: center; /* Center align items */
+        text-align: center; /* Center align text */
+        height: auto; /* Allow content to expand with its content */
+        padding-top: 4rem; /* Ensure space above content to prevent hiding under nav bar */
+    }
+
+    .introContent {
+        max-width: 100%; /* Full width for content on smaller screens */
+        padding: 1rem; /* Reduce padding for smaller screens */
+    }
+
+    .bg {
+        max-width: 100%; /* Full width for image on smaller screens */
+        margin-left: 0; /* Remove margin to stack the image below the text */
+        margin-top: 1rem; /* Add some space between text and image */
+    }
+
+    .introText {
+        font-size: 4rem; /* Decrease font size for smaller screens */
+    }
+
+    .btn {
+        font-size: medium; /* Adjust button font size for smaller screens */
+    }
+}

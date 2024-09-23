@@ -1,0 +1,96 @@
+@import url('https://fonts.googleapis.com/css?family=Material+Icons');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+#ContactPage {
+    overflow: hidden;
+    width: 100vw;
+    max-width: 60rem;
+    display: flex;
+    flex-direction: column;
+    padding-top: 2rem;
+    justify-content: center;
+    text-align: justify;
+    margin: 0 auto;
+}
+
+.contactTitle {
+    font-size: 3rem;
+    font-weight: 600;
+    margin-bottom: 1rem;
+    text-decoration: underline;
+    text-decoration-color: rgb(255, 255, 255);
+    text-decoration-thickness: 3px;
+    text-underline-offset: 10px;
+    padding: 0 2rem;
+    padding-bottom: 20px;
+    color: white;
+}
+
+.contactDesc {
+    font-size: large;
+    font-weight: 100;
+    font-family: 'Raleway', sans-serif;
+    line-height: 30px;
+    padding: 0 2rem;
+    color: white;
+}
+
+.contactForm {
+    margin: 1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 90vw;
+    max-width: 65rem;
+}
+
+.name,
+.email,
+.msg {
+    border-radius: 10px;
+    font-size: medium;
+    width: 50%;
+    max-width: 40rem;
+    margin: 0.5rem;
+    padding: 0.5rem 1rem;
+   
+    border: 2px solid rgba(255, 255, 255, 0.7);
+    background: transparent;
+    color: white; /* Text color */
+    outline: none; /* Remove outline */
+    transition: border-color 0.3s ease; /* Smooth transition for border color */
+}
+
+.name:focus,
+.email:focus,
+.msg:focus,
+.name:hover,
+.email:hover,
+.msg:hover {
+    border-color: rgba(255, 255, 255, 0.7); /* Change border color on focus and hover */
+}
+
+.submitBtn {
+    width: 20%;
+    height: 40px;
+    border: 2px solid rgba(255, 255, 255, 0.7); /* Border style */
+    outline: none;
+    border-radius: 10px;
+    cursor: pointer;
+    font-size: 1em;
+    color: rgb(255, 255, 255);
+    font-weight: 500;
+    background-color: transparent; /* Transparent background */
+    transition: border-color 0.3s ease; /* Smooth transition for border color */
+}
+
+.submitBtn:hover {
+    border-color: rgb(255, 255, 255); /* Change border color on hover */
+}

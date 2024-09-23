@@ -1,0 +1,69 @@
+.Navbar {
+  height: 5rem;
+  width: 100%;
+  margin: 0 auto;
+  padding: 1rem 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: sticky;
+  top: 0;
+  z-index: 3;
+  background-color: #333;
+}
+
+.myName {
+  object-fit: cover;
+  color: white;
+  font-size: 3rem;
+}
+
+.desktopMenu {
+  display: flex;
+  gap: 2rem;
+}
+
+.desktopMenuListItem {
+  color: white;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+.desktopMenuListItem:hover {
+  text-decoration: underline;
+}
+
+@media screen and (max-width: 780px) {
+  .mobMenu {
+    display: flex;
+    object-fit: cover;
+    height: 1.8rem;
+    cursor: pointer;
+  }
+
+  .desktopMenu {
+    display: none;
+  }
+
+  .navMenu {
+    position: absolute;
+    top: 4rem;
+    right: 2rem;
+    z-index: 2;
+    display: flex;
+    flex-direction: column;
+    padding: 0.5rem;
+    height: fit-content;
+    min-width: 15rem;
+    background: rgb(40, 40, 40);
+    border-radius: 1rem; /* Adjust border-radius as needed */
+  }
+
+  .listItem {
+    color: white;
+    padding: 0.5rem 3rem;
+    margin: 0.25rem;
+    background: rgb(30, 30, 30);
+    cursor: pointer;
+  }
+}
