@@ -6,9 +6,9 @@ import html from '../../assets/htmllogo.png';
 import css from '../../assets/csslogo.png';
 import js from '../../assets/javascriptlogo.png';
 import reactLogo from '../../assets/reactlogo.png';
-import ml from '../../assets/machinelearn.png';
-import swift from '../../assets/swiftlogo.png';
+import mogodb from '../../assets/mongodb.jpg'
 import figma from '../../assets/figms.png';
+import articulate from '../../assets/articulate.jpg';
 
 const Learn = () => {
   return (
@@ -20,13 +20,10 @@ const Learn = () => {
           <span>Python</span>
         </div>
         <div className="learnImgWrapper">
-          <img src={java} alt="Java" className="learnImg" />
-          <span>Java</span>
+          <img src={mogodb} alt="Python" className="learnImg" />
+          <span>MongoDB</span>
         </div>
-        <div className="learnImgWrapper">
-          <img src={ml} alt="Machine Learning" className="learnImg" />
-          <span>Machine Learning</span>
-        </div>
+        
         <div className="learnImgWrapper">
           <img src={html} alt="HTML" className="learnImg" />
           <span>HTML</span>
@@ -43,14 +40,17 @@ const Learn = () => {
           <img src={reactLogo} alt="React" className="learnImg" />
           <span>React</span>
         </div>
-        <div className="learnImgWrapper">
-          <img src={swift} alt="Swift" className="learnImg" />
-          <span>Swift</span>
-        </div>
+        
         <div className="learnImgWrapper">
           <img src={figma} alt="Figma" className="learnImg" />
           <span>Figma</span>
         </div>
+
+        <div className="learnImgWrapper">
+          <img src={articulate} alt="Figma" className="learnImg" />
+          <span>Articulate 360</span>
+        </div>
+        
       </div>
     </section>
   );
