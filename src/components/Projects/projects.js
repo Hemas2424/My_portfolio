@@ -4,7 +4,7 @@ import music from '../../assets/musiclogo.png'
 import shedule from '../../assets/shedule.png'
 import portfolio from '../../assets/portfolio.png'
 import proctor from '../../assets/proctor.png'
-import fashion from '../../assets/fashion.png'
+import fashion from '../../assets/fashion1.png'
 
 const projects = () => {
   return (
