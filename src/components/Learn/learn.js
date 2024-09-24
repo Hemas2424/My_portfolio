@@ -1,7 +1,6 @@
 import React from 'react';
 import './learn.css';
 import python from '../../assets/pythonlogo.png';
-import java from '../../assets/javalogo.png';
 import html from '../../assets/htmllogo.png';
 import css from '../../assets/csslogo.png';
 import js from '../../assets/javascriptlogo.png';
@@ -11,6 +10,7 @@ import figma from '../../assets/figms.png';
 import articulate from '../../assets/articulate.jpg';
 
 const Learn = () => {
+  
   return (
     <section id="learning">
       <h1 className="learnTitle">Skills</h1>

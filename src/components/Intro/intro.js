@@ -1,7 +1,7 @@
 import React from 'react'
 import './intro.css'
 import bg from '../../assets/hema pic.jpg'
-import { Link } from 'react-scroll';
+
 
 const Intro = () => {
   return (
